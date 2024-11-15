@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Match</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexScript.js" defer></script>
+</head>
+<body>
+    <h1>Match the Sports </h1>
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1" data-name="Basketball">Basketball</div>
+        <div class="box" draggable="true" id="box2" data-name="Volleyball">Volleyball</div>
+        <div class="box" draggable="true" id="box3" data-name="ShuttleCock">Shuttle Cock</div>
+        <div class="box" draggable="true" id="box4" data-name="TennisBall">Tennis
+          Ball</div>
+        <div class="box" draggable="true" id="box5" data-name="Billiards">
+          Billiards</div>
+        <div class="box" draggable="true" id="box6" data-name="Baseball">Baseball</div>
+        <div class="box" draggable="true" id="box7" data-name="Soccer">Soccer Ball</div>
+        <div class="box" draggable="true" id="box8" data-name="Golf">Golf Ball</div>
+        <div class="box" draggable="true" id="box9" data-name="Hockey Ball">Hockey Ball</div>
+        <div class="box" draggable="true" id="box10" data-name="Football">
+          FootBall</div>
+    </div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">
+            <img src="basketball.jpg" width="100">
+            <span class="item-label">Basketball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box2">
+            <img src="volleyball.jpg">
+            <span class="item-label">Volleyball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box3">
+            <img src="shuttle.jpg">
+            <span class="item-label">ShuttleCock</span>
+        </div>
+        <div class="droppable" data-draggable-id="box4">
+            <img src="tennis.jpg">
+            <span class="item-label">Tennis Ball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box5">
+            <img src="billiard.jpg">
+            <span class="item-label">Billiards</span>
+        </div>
+        <div class="droppable" data-draggable-id="box6">
+            <img src="baseball.jpg">
+            <span class="item-label">Baseball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box7">
+            <img src="soccer.jpg">
+            <span class="item-label">Soccer Ball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box8">
+            <img src="golf.jpg">
+            <span class="item-label">Golf Ball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box9">
+            <img src="hockey.jpg">
+            <span class="item-label">Hockey Ball</span>
+        </div>
+        <div class="droppable" data-draggable-id="box10">
+            <img src="football.jpg">
+            <span class="item-label">FootBall</span>
+        </div>
+    </div>
+
+    <div class="board">
+        Remarks:<p id="remarks"></p>
+        Score:<p id="scores"></p>
+         <!-- Timer Display -->
+    Time Left:<p id="timer"></p>
+    </div>
+ 
+</div>
+
+</body>
+</html>
